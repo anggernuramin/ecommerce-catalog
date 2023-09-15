@@ -30,7 +30,6 @@
         <div class="wrapper-card bg-unavailable-product">
           <div class="card">
             <h2>This product is unavailable to show</h2>
-            <p>{{ data.category }}</p>
             <button @click="getNumberId">Next product</button>
           </div>
         </div>
@@ -135,9 +134,9 @@ export default {
   width: 100%;
   height: 100%;
   gap: 20px;
-  grid-template-columns: 1.3fr 2fr; /* Kolom pertama 1 fraksi, kolom kedua 2 fraksi */
-  justify-content: center; /* Pusatkan secara horizontal */
-  align-items: flex-start; /* Pusatkan secara vertikal */
+  grid-template-columns: 1.3fr 2fr;
+  justify-content: center;
+  align-items: flex-start;
 }
 .card .card-image {
   width: 80%;
@@ -216,10 +215,10 @@ export default {
 }
 
 .bg-category-women .card-product-rating .active-rating {
-  background: var(--women-style-color); /* Warna lingkaran aktif */
+  background: var(--women-style-color);
 }
 .bg-category-men .card-product-rating .active-rating {
-  background: var(--men-style-color); /* Warna lingkaran aktif */
+  background: var(--men-style-color);
 }
 
 .bg-category-women .card-product-rating .half-rating {
@@ -292,10 +291,22 @@ export default {
   color: var(--primary-color);
   background-color: var(--women-style-color);
 }
+.bg-category-women .card-content-button .button-active:hover {
+  color: var(--primary-color);
+  background-color: transparent;
+  border: 2px solid var(--women-style-color);
+}
+
 .bg-category-men .card-content-button .button-active {
   color: var(--primary-color);
   background-color: var(--men-style-color);
 }
+.bg-category-men .card-content-button .button-active:hover {
+  color: var(--primary-color);
+  background-color: transparent;
+  border: 2px solid var(--men-style-color);
+}
+
 .bg-category-women .card-content-button .button-next-product:hover {
   background-color: var(--women-style-color);
   border: 2px solid transparent;
