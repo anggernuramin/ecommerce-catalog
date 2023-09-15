@@ -292,7 +292,7 @@ export default {
   background-color: var(--women-style-color);
 }
 .bg-category-women .card-content-button .button-active:hover {
-  color: var(--primary-color);
+  color: var(--women-style-color);
   background-color: transparent;
   border: 2px solid var(--women-style-color);
 }
@@ -302,7 +302,7 @@ export default {
   background-color: var(--men-style-color);
 }
 .bg-category-men .card-content-button .button-active:hover {
-  color: var(--primary-color);
+  color: var(--men-style-color);
   background-color: transparent;
   border: 2px solid var(--men-style-color);
 }
@@ -353,7 +353,7 @@ export default {
   border-radius: 4px;
   background-color: var(--primary-color);
   border: 3px solid rgba(0, 0, 0, 0.4);
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 }
 .bg-unavailable-product .card button:hover {
   background-color: rgba(0, 0, 0, 0.1);
